@@ -1,1 +1,1 @@
-See Enrol.py for bulk of relevant code
+See Enrol.py and stats.py for bulk of relevant code
