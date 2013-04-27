@@ -9,7 +9,7 @@ allcells=[]
 x = 10
 y = 10
 
-g = Grid.grid(0,0)
+g = Grid.grid(10,10)
 print g
 
 for i in range(0,y):
@@ -20,7 +20,7 @@ for i in range(0,y):
 
 for column in allcells:
 	for c in column:
-		print c.pos
-	print
+		print "x:{} y:{}".format(c.pos[0],c.pos[1])
+		print c.getNeighbours(g)
 sleep(0.5)
 os.system("cls")
