@@ -18,9 +18,5 @@ for i in range(0,y):
 		column.append(Cell.cell((i,j)))
 	allcells.append(column)
 
-for column in allcells:
-	for c in column:
-		print "x:{} y:{}".format(c.pos[0],c.pos[1])
-		print c.getNeighbours(g)
-sleep(0.5)
-os.system("cls")
+c = Cell.cell((0,0))
+c.getNeighbours()
