@@ -1,3 +1,11 @@
+def print_horizontal_line(length):	
+	line = "+-"*(length -1)+"+"
+
+	print line
+
+def print_bars(length):
+	print "| "*length
+
 class grid(object):
 	"""docstring for grid"""
 	def __init__(self, x,y):
@@ -7,3 +15,4 @@ class grid(object):
 	def __str__(self):
 		s = "X:{} Y:{}".format(self.x,self.y)
 		return s
+
